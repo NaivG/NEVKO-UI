@@ -36,7 +36,8 @@
 | :-- | :-- | --: |
 | **Header** | `▰▰▰▰▰▰▰▰▱▱` | ~80% |
 | **Friends & Chats** | `▰▰▰▰▰▰▱▱▱▱` | ~60% |
-| **Library** | `▰▱▰▱▰▱▰▱▰▱` | in progress |
+| **Library** | `▰▰▰▱▱▱▱▱▱▱` | ~30% |
+| **Dialogs** | `▰▱▰▱▰▱▰▱▰▱` | in progress |
 | **Everything else** | `▱▱▱▱▱▱▱▱▱▱` | not started |
 
 ---
@@ -100,6 +101,9 @@
 <details>
 <summary><b>Library</b></summary>
 
+- **Library Size** - adjust the width of the game list sidebar
+- **Library Side** and **Game Page Side** - which side the game list and the game page are on
+- **Game Page Content Location** - where the play button and the game page content are placed
 - **Library Items** - hide *What's New* and *Add Shelf*
 - **Achievements Tab** - hide *Recent* and *Unreached Achievements*
 - **Remove Shiny Effect** - no shine on game cards

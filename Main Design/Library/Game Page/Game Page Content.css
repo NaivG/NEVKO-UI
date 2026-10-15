@@ -1,0 +1,302 @@
+/* Game page content: showcase, section headers, achievements, removers */
+/* Base game page: Game Page Code.css | Achievements hide options: Hide Library Items */
+
+/* Showcase Layout */
+
+.ddB5GVHCwLezhshXUMCNL {
+	margin-left: auto;
+	margin-right: auto;
+	top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: unset;
+	height: 184px;
+	padding-right: unset;
+}
+._3dJ4Bq6Msivz5-UIHzSEQu .ElNfQSVSKeMaOVHygQ4Nh {
+	display: none;
+}
+._3dJ4Bq6Msivz5-UIHzSEQu {
+	padding: 40px 0px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 130px;
+}
+.VytJzt3Z_t6332-n24Yrc {
+	min-width: 290px;
+	max-width: 400px;
+	border-radius: 6px;
+}
+
+/* Showcase Cards */
+
+._2gv3EsHSu5dMQyMqaz-W9t {
+	display: block;
+	background: color-mix(in srgb, var(--secondary-background) 90%, white) !important;
+	width: 750px;
+	border-radius: 10px;
+	outline: 1px solid color-mix(in srgb, var(--secondary-background) 80%, gray) !important;
+	box-shadow: 0px 0em 4px 0px #00000099;
+}
+._2gv3EsHSu5dMQyMqaz-W9t:hover {
+	background: color-mix(in srgb, var(--secondary-background) 85%, white) !important;
+	transition: .2s ease-out;
+}
+.UVeN0kaD3zv1feMj_mMw5.By7D93oEZkZtBeg23NDoR._3xi-HLpFVHaakihoqhQ_6C
+	> ._1HZy7BvOZuPT8feUwadL4W
+	> ._2gv3EsHSu5dMQyMqaz-W9t {
+	outline: 2px solid var(--SystemAccentColor) !important;
+}
+._2gv3EsHSu5dMQyMqaz-W9t:hover ._1ujzuoxGhLunHZQqHAqRgg div {
+	background: color-mix(in srgb, var(--secondary-background) 85%, white) !important;
+	transition: .2s ease-out;
+}
+
+/* Showcase Content */
+
+._1HZy7BvOZuPT8feUwadL4W {
+	border-radius: 10px;
+	width: 78%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: unset;
+	transition-property: unset;
+	transition-duration: unset;
+	transition-timing-function: unset;
+	margin-left: auto;
+	margin-right: auto;
+}
+._1AYE16384J_ecLpN0sEYc5 {
+	border: unset;
+	border-image-source: unset;
+	border-image-width: unset;
+	border-image-repeat: unset;
+	border-image-slice: unset;
+	box-shadow: unset;
+	background: unset;
+}
+._1HZy7BvOZuPT8feUwadL4W:hover {
+	background: unset;
+}
+.UVeN0kaD3zv1feMj_mMw5.By7D93oEZkZtBeg23NDoR._3xi-HLpFVHaakihoqhQ_6C {
+	background: unset;
+}
+._1AYE16384J_ecLpN0sEYc5:last-child {
+	padding: 16px 0 16px 0;
+}
+
+/* Showcase Labels */
+
+.UVeN0kaD3zv1feMj_mMw5 ._1WdC0YUP8FT0dYWZ-QIVZL {
+	background: var(--SystemAccentColor);
+	padding: 4px 0px 4px 2px;
+	font-weight: bold;
+	box-shadow: 0px -3px 9px 1px #0000005c;
+	font-size: 14px;
+	line-height: 23px;
+	letter-spacing: 2px;
+	top: -16px;
+	position: absolute;
+	border-radius: 6px 6px 0 0;
+	margin-left: unset;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+	display: flex;
+	justify-content: center;
+	padding: 4px 0px 4px 2px;
+	width: 30%;
+	text-align: center;
+	display: flex;
+	left: auto;
+	right: 35%;
+}
+
+._1ujzuoxGhLunHZQqHAqRgg {
+	letter-spacing: 1px;
+	color: var(--text-muted-color);
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: unset;
+}
+._1ujzuoxGhLunHZQqHAqRgg div {
+	padding: 8px 8px 8px 10px;
+	display: flex;
+	margin-top: -438px;
+	background: color-mix(in srgb, var(--secondary-background) 90%, white) !important;
+	border-radius: 0 0 10px 10px;
+}
+._2gv3EsHSu5dMQyMqaz-W9t:hover ._1ujzuoxGhLunHZQqHAqRgg div {
+	background: color-mix(in srgb, var(--secondary-background) 85%, white) !important;
+	transition: .2s ease-out;
+}
+.Ru7OBQzSxqIo3jIsbtV9g {
+	max-width: 600px;
+	padding-top: 6px;
+	margin: auto;
+	text-align: center;
+	justify-items: center;
+}
+html:has([class*="NarrowRightPanel"]) [class*="_3dJ4Bq6Msivz5-UIHzSEQu"],
+div.NarrowRightPanel ._3dJ4Bq6Msivz5-UIHzSEQu {
+	padding: 24px 0px 0px 0px;
+}
+div.NarrowRightPanel ._1ujzuoxGhLunHZQqHAqRgg div {
+	margin-top: -416px;
+}
+.UVeN0kaD3zv1feMj_mMw5._3xi-HLpFVHaakihoqhQ_6C {
+	box-shadow: unset;
+	background: unset;
+}
+
+._2Z3ghRCL5qh2cqXrrd9l8Z {
+	flex-flow: unset;
+}
+._2Z3ghRCL5qh2cqXrrd9l8Z ._17u7kJzj4gno8unUOzRaz- {
+	margin-right: 10px;
+}
+
+html:has([class*="_5uvIN6jXDXzzck59F-nhv"]):has([class*="_1TGl52GwsFQg3CXUYvThP-"]) [class*="lO1IF132jJ1gc9yz2HYvV"] {
+	margin-top: -36px !important;
+}
+
+/* Section Headers */
+
+.S2Fu9HxHCA5MaCLGrN2ib ._19LfMT7PFWg2xHOqNjR99q {
+	color: var(--text-muted-color);
+	justify-content: center;
+	margin-top: 4px;
+	border-radius: 10px 10px 0px 0px;
+	padding-top: 4px;
+	width: 38%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 4px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	background: color-mix(in srgb, var(--secondary-background) 90%, white) !important;
+	margin-top: 12px;
+	outline: 1px solid color-mix(in srgb, var(--secondary-background) 90%, white) !important;
+	margin-bottom: 8px;
+	max-width: 225px;
+}
+.S2Fu9HxHCA5MaCLGrN2ib ._19LfMT7PFWg2xHOqNjR99q ._3pcPRPvuGH7hEM33zLknZO {
+	height: 2px;
+	width: 59%;
+	align-self: center;
+	background: color-mix(in srgb, var(--secondary-background) 90%, white) !important;
+	position: fixed;
+	margin-top: 28px;
+	margin-left: unset;
+	box-shadow: 0px 3px 8px 0px #00000070;
+}
+button.TextButton._34gmVq6C3FNtdHqDLa3-XR {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 12px;
+}
+
+._1yWgPveQ73QeYCdLcs6oFQ ._161IKq84RwQO4abJSCqv7q:hover {
+	background-color: color-mix(in srgb, var(--secondary-background) 85%, white) !important;
+	transition: .2s ease-out;
+	cursor: pointer;
+}
+
+/* Achievements Layout */
+
+.yJLy7HDLJT44C1fcm6lPI {
+	padding: unset;
+	justify-content: center;
+}
+.UVeN0kaD3zv1feMj_mMw5 .NEMXhMlqXOCJwfgWlHXhT {
+	background: unset;
+	border-image-width: unset;
+	border-image-repeat: unset;
+	border-image-slice: unset;
+	padding: 12px 0px;
+	box-shadow: unset;
+}
+
+/* Achievement Cards */
+
+._1j_gja8bHXjiS-BeSQk8hb {
+	padding: 12px;
+	background: color-mix(in srgb, var(--secondary-background) 90%, white) !important;
+	outline: 1px solid color-mix(in srgb, var(--secondary-background) 80%, gray) !important;
+	box-shadow: 0px 0em 4px 0px #00000099;
+	border-radius: 8px;
+	border: unset;
+}
+._2gISWIeEzZ9PNuAzVuMaWd,
+._1ABm6sfuqiZZDSL9z8mW1a,
+._2aVnDeExEHiUFX0zwr_BTO,
+._2V2sHETNfa62yMoDwSF3_t {
+	border-radius: 4px;
+}
+
+/* Special Achievement Highlighting */
+._1j_gja8bHXjiS-BeSQk8hb:has(._2V2sHETNfa62yMoDwSF3_t._3s4Rq3jnntBVP7HbJj1RMQ) {
+	background: #ffb84e26 !important;
+	box-shadow: 0px 0px 0px 0px rgb(255 184 78 / 58%), 0px 0px 16px 1px rgb(255 184 78 / 14%) !important;
+}
+._2D_EJk8-jCnfqiwoKkOMVh {
+	display: none;
+}
+
+._1j_gja8bHXjiS-BeSQk8hb._14U8eM1W6Z4uJhCc5zvbKC {
+	margin-bottom: 16px;
+}
+._38t1mljBjmJfqjpVzMT1CG {
+	background: color-mix(in srgb, var(--secondary-background) 90%, white) !important;
+	margin-top: 16px;
+	border-radius: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+._2YS0EBJmY2Rvs07zZ90UIJ svg {
+	display: none;
+}
+._2YS0EBJmY2Rvs07zZ90UIJ {
+	padding-left: 12px;
+}
+
+button.DialogButton._3Cdin80d-hVsakHUZboheb {
+	margin-top: -4px !important;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--button-radius);
+}
+button.DialogButton::before {
+	border-radius: 8px;
+}
+
+._3ns9185LizH61StaAXuAp6 {
+	border-radius: 60px;
+}
+._3ns9185LizH61StaAXuAp6 ._3Rm36_oeAhvIg6ZYP9l1Jj {
+	border-radius: 3px;
+}
+
+/* Removers */
+
+/* Remove Recommended Review */
+._27RcNu8aXKBpYkHcNNrt-X ._11kuVRYZvWXn-3rBJ_6yL8._3wbndu1paxHkciYr4rFJH5 {
+	display: none;
+}
+._3LE-6w1ItIAB4CKJFCa3Od {
+	display: none;
+}
+
+/* Fix Bugs */
+._2_86QNCjVvJTL3Qe6Xztx_._2sKVnd_AUg44QSdoAp8Lne {
+	opacity: 0;
+}
+._39RheXihcN6H2k2muQTjkI ._3DeO92O5aVkcdwEBCJDjWm {
+	padding-top: unset;
+}
+._2_86QNCjVvJTL3Qe6Xztx_ {
+	z-index: -10 !important;
+}

@@ -367,6 +367,117 @@
       }
     },
 
+    "Library Size": {
+      "description": "Width of the game list sidebar in the library",
+      "default": "Default",
+      "tab": "UI Personalization",
+	  "section": "Library",
+      "values": {
+        "Small": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Library Sizes/Small.css"
+          }
+        },
+        "Default": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Library Sizes/Default.css"
+          }
+        },
+        "Medium": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Library Sizes/Medium.css"
+          }
+        },
+        "Big": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Library Sizes/Big.css"
+          }
+        }
+      }
+    },
+
+    "Library Side": {
+      "description": "Which side of the screen the game list is shown on",
+      "default": "Left",
+      "tab": "UI Personalization",
+	  "section": "Library",
+      "values": {
+        "Left": {},
+        "Right": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Flip Sides/Flip Library.css"
+          }
+        }
+      }
+    },
+
+    "Game Page Side": {
+      "description": "Which side of the screen the game details are shown on",
+      "default": "Left",
+      "tab": "UI Personalization",
+	  "section": "Library",
+      "values": {
+        "Left": {},
+        "Right": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Flip Sides/Flip Gamepage.css"
+          }
+        }
+      }
+    },
+
+    "Game Page Content Location": {
+      "description": "Where the play button and the game page content are placed",
+      "default": "Center",
+      "tab": "UI Personalization",
+	  "section": "Library",
+      "values": {
+        "Center": {},
+        "[All] Left Side": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Game Buttons Location/leftside-all.css"
+          }
+        },
+        "[All] Right Side": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Game Buttons Location/rightside-all.css"
+          }
+        },
+        "[Game Links] Right Side Only": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Game Buttons Location/rightside-links.css"
+          }
+        },
+        "[Game Links] Left Side Only": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Game Buttons Location/leftside-links.css"
+          }
+        },
+        "[Compact] Left Side": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Game Buttons Location/compact-left.css"
+          }
+        },
+        "[Compact] Right Side": {
+          "TargetCss": {
+            "affects": ["^Steam$"],
+            "src": "Main Design/Library/Game Buttons Location/compact-right.css"
+          }
+        }
+      }
+    },
+
     "Library Items": {
       "description": "Hide specific elements from the library home screen",
       "default": "None",
@@ -856,6 +967,18 @@
     {
       "MatchRegexString": "^Steam$",
       "TargetCss": "Main Design/Settings/Millennium/Quick Settings.css"
+    },
+    {
+      "MatchRegexString": "^Steam$",
+      "TargetCss": "Main Design/Library/Library Code.css"
+    },
+    {
+      "MatchRegexString": "^Steam$",
+      "TargetCss": "Main Design/Library/Game Page/Game Page Code.css"
+    },
+    {
+      "MatchRegexString": "^Steam$",
+      "TargetCss": "Main Design/Library/Game Page/Game Page Content.css"
     },
 	
     {
