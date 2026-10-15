@@ -4,12 +4,23 @@
 ;(() => {
   "use strict"
 
+  // The Chat Area option of the theme (its value comes in a variable from the option's CSS):
+  // "off" - every chat opens in its own window, the friends window keeps its list alone
+  function chatsInOwnWindows() {
+    try {
+      return getComputedStyle(document.documentElement).getPropertyValue("--nk-chat-area").trim() === "off"
+    } catch {
+      return false
+    }
+  }
+  const turnOf = rule => (typeof rule.turn === "function" ? rule.turn() : rule.turn)
+
   // page: tab (PAGE_NAMES key) | index: row on tab, from 0 | turn: "off" / "on" | hide: hide row
   const FORCED = [
     { page: "friends",       index: 7, turn: "off", hide: true },
     { page: "friends",       index: 8, turn: "off", hide: true },
-    { page: "friends",       index: 9, turn: "on",  hide: true }, // dock chats to the friends list
-    { page: "friends",       index: 10, turn: "off", hide: true }, // new chats in a new window
+    { page: "friends",       index: 9, turn: () => (chatsInOwnWindows() ? "off" : "on"),  hide: true }, // dock chats to the friends list
+    { page: "friends",       index: 10, turn: () => (chatsInOwnWindows() ? "on" : "off"), hide: true }, // new chats in a new window
     { page: "library",       index: 3, turn: "on",  hide: true },
     { page: "library",       index: 4, turn: "off", hide: true },
     { page: "accessibility", index: 1, turn: "off", hide: true },
@@ -125,7 +136,7 @@
     for (const { rule, row } of targets) {
       if (rule.hide) hideRow(row)
       const toggle = row.querySelector(TOGGLE)
-      if (toggle && isOn(toggle) !== (rule.turn === "on")) reactClick(toggle)
+      if (toggle && isOn(toggle) !== (turnOf(rule) === "on")) reactClick(toggle)
     }
   }
 

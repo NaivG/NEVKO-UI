@@ -630,6 +630,32 @@
       }
     },
 
+    "Chat Area": {
+      "description": "Chat beside the friends list: always shown, folded while the window is too narrow, or in its own window",
+      "default": "Always Show",
+      "tab": "UI Personalization",
+      "section": "Friends&Chat",
+      "values": {
+        "Always Show": {},
+        "Auto Hide": {
+          "TargetCss": {
+            "affects": ["^.*$", ".*"],
+            "src": "Main Design/Friends&Chats/Chat/Options/Chat Area Auto Hide.css"
+          },
+          "TargetJs": {
+            "affects": ["^.*$", ".*"],
+            "src": "Main Design/Friends&Chats/Chat/Options/Chat Area Auto Hide.js"
+          }
+        },
+        "Don't Show": {
+          "TargetCss": {
+            "affects": ["^.*$", ".*"],
+            "src": "Main Design/Friends&Chats/Chat/Options/Chat Area Dont Show.css"
+          }
+        }
+      }
+    },
+
     "Rounding Messages": {
       "description": "Change how round message bubbles look",
       "default": "",

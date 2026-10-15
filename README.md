@@ -71,6 +71,7 @@
 
 - **Default Friends Tab** - open *Friends* or *Chats* on launch
 - **Hide Friends Tabs** - hide the *Friends / Chats* tabs above the list
+- **Chat Area** - the chat beside the list: always shown, folded while the window is too narrow, or in its own window
 - **Group Chats Position** - group chats above or below recent chats
 - **Hide Unread Count** and **Hide Unread Messages Group**
 - **My Messages Side** - your messages on the right or on the left

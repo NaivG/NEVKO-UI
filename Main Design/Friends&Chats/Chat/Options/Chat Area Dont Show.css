@@ -1,0 +1,6 @@
+/* Option "Chat Area: Don't Show" - the friends window keeps its list alone: every chat opens in its own window */
+/* (the Steam settings behind it are written by Patches/Forced Disable & Remove Settings) */
+
+:root {
+	--nk-chat-area: off;
+}

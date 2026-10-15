@@ -1,0 +1,22 @@
+/* Option "Chat Area: Auto Hide" - the chat beside the friends list folds away while the window cannot hold it */
+/* (the width is watched by Chat Area Auto Hide.js: html.nk-chat-narrow) */
+
+:root {
+	--nk-chat-area: auto;
+}
+
+/* Too narrow for the list and the chat together: the list takes the window, the chat area goes with it */
+/* (with no chat open the area is empty anyway: "Click a Friend or Group Chat to start!") */
+html.nk-chat-narrow .chat_main.singlewindow:has(.friendsListContainer) .friendsListContainer {
+	width: 100% !important;
+	max-width: none !important;
+}
+html.nk-chat-narrow .chat_main.singlewindow:has(.friendsListContainer):not(:has(.singleWindowDivider)) .multiChatDialog {
+	display: none !important;
+}
+
+/* A chat is open (the divider stands between the two): the chat takes the window, the list folds away - */
+/* the messages are never hidden, only the list they would have to share the window with */
+html.nk-chat-narrow .chat_main.singlewindow:has(.friendsListContainer):has(.singleWindowDivider) :is(.friendsListContainer, .singleWindowDivider) {
+	display: none !important;
+}
