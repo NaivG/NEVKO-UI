@@ -878,6 +878,22 @@
       }
     },
 
+    "Dialogs": {
+      "description": "Refresh: redesigned dialogs, Steam settings and popups | Legacy: default Steam style",
+      "default": "Refresh",
+      "tab": "UI Personalization",
+      "section": "Dialogs",
+      "values": {
+        "Legacy": {},
+        "Refresh": {
+          "TargetCss": {
+            "affects": ["^.*$", ".*"],
+            "src": "Main Design/Dialogs/Dialogs Code.css"
+          }
+        }
+      }
+    },
+
     "Blur Account Name": {
       "description": "Apply blur effect to your account/login name",
       "default": "no",

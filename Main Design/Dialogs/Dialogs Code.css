@@ -1,0 +1,422 @@
+/* Dialogs | Toggle: skin.json / UI Personalization -> Dialogs (Refresh / Legacy) */
+/* Modal windows, Steam Settings, dialog controls, popups and notifications */
+/* The look follows the theme: flat dark plaques, the accents of Patches/Colors */
+
+/* Modal Overlay */
+
+/* Backdrop behind centered modals */
+.ModalDialogPopup .ModalOverlayBackground,
+.ModalOverlayBackground {
+	background: color-mix(in srgb, #000 62%, transparent) !important;
+}
+
+/* Fullscreen modals sit on a heavier backdrop */
+.FullModalOverlay:has(.ModalOverlayBackground) {
+	background-color: color-mix(in srgb, #000 75%, transparent) !important;
+}
+
+/* Plaque that carries the dialog itself */
+.ModalPosition_Content {
+	border-radius: var(--button-radius, 6px);
+	background-color: var(--main-background) !important;
+}
+
+/* Dismiss (X) in the top bar of modal windows */
+.ModalPosition_TopBar {
+	background: transparent !important;
+	border: 0 !important;
+}
+.ModalPosition_Dismiss .closeButton {
+	background: var(--button-background) !important;
+	border-radius: var(--button-radius, 6px);
+	transition: background-color .15s linear;
+}
+.ModalPosition_Dismiss .closeButton:hover {
+	background: var(--button-hover-background) !important;
+}
+.ModalPosition_Dismiss .closeButton svg {
+	fill: var(--icon-color);
+	transition: fill .15s linear;
+}
+.ModalPosition_Dismiss .closeButton:hover svg {
+	fill: var(--text-bright-color);
+}
+
+/* Dialog Content */
+
+/* The window of a floating dialog (the pages of Steam Settings are below) */
+.DialogContent._DialogLayout:not(.PagedSettingsDialog_PageContent, .CFTLX2wIKOK3hNV-fS7_V) {
+	border-radius: var(--button-radius, 6px);
+	background-color: var(--main-background) !important;
+	box-shadow: 0 0 0 1px var(--button-background);
+	color: var(--text-soft-color);
+}
+.DialogContent_InnerWidth {
+	background-color: transparent !important;
+}
+
+/* Title at the top of a dialog */
+.DialogContent_InnerWidth > .DialogHeader,
+.DialogContent > .DialogHeader {
+	margin: 0 !important;
+	padding: 16px 18px 10px !important;
+
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--text-bright-color);
+	background: transparent;
+	border-bottom: 1px solid var(--button-background);
+}
+
+/* Group titles inside the body */
+.DialogSubHeader {
+	margin: 0 !important;
+	padding: 12px 18px 4px !important;
+
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .4px;
+	text-transform: uppercase;
+	color: var(--text-muted-color);
+}
+
+/* Body where most controls live */
+.DialogBody {
+	padding: 12px 18px 18px !important;
+	color: var(--text-soft-color);
+}
+.DialogBodyText {
+	color: var(--text-soft-color) !important;
+}
+
+/* Sections / cards inside a dialog */
+.DialogBody .DialogControlsSection,
+.DialogBody > .Panel,
+.DialogBody .DialogControlsSection > .Panel {
+	background-color: var(--secondary-background) !important;
+	border: 0;
+	border-radius: var(--button-radius, 6px);
+	padding: 8px 12px;
+}
+.DialogBody .DialogControlsSectionHeader {
+	color: var(--text-bright-color) !important;
+	font-weight: 600;
+}
+
+/* Field rows in the settings: a light plaque on hover */
+.DialogBody .eKmEXJCm_lgme24Fp_HWt {
+	border-radius: var(--button-radius, 6px);
+	transition: background-color .15s linear;
+}
+.DialogBody .eKmEXJCm_lgme24Fp_HWt:hover {
+	background-color: var(--button-hover-background) !important;
+}
+.DialogBody .eKmEXJCm_lgme24Fp_HWt ._2VcTlXFC64Jtg9gvtT6cmY {
+	color: var(--text-light-color) !important;
+}
+.DialogBody .eKmEXJCm_lgme24Fp_HWt ._3jMlJm4PQCA8SfNlUR99Fo {
+	font-weight: 500;
+}
+.DialogBody .eKmEXJCm_lgme24Fp_HWt ._2tALpM7z8naXJ35Pp5fNAG {
+	color: var(--text-muted-color);
+}
+
+/* Dialog Buttons */
+
+/* The rounding slider applies to them too */
+button.DialogButton {
+	border-radius: var(--button-radius, 6px);
+}
+
+/* Flat plaques inside dialogs; the main action takes the accent */
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton {
+	font-weight: 500;
+	border: 0 !important;
+	transition: background-color .15s linear, color .15s linear;
+}
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton::before {
+	border-radius: inherit;
+	background: transparent !important;
+}
+
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton:not(.Primary) {
+	background-color: var(--button-background) !important;
+	color: var(--text-light-color) !important;
+}
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton:not(.Primary):hover {
+	background-color: var(--button-hover-background) !important;
+	color: var(--text-bright-color) !important;
+}
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton:not(.Primary):disabled {
+	background-color: var(--button-background-disabled) !important;
+	color: var(--text-muted-color) !important;
+}
+
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton.Primary {
+	background-color: var(--SystemAccentColor) !important;
+	color: var(--text-bright-color) !important;
+}
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton.Primary:hover {
+	background-color: var(--SystemAccentColor-Light) !important;
+}
+:is(.DialogContent, .DialogBody, .DialogControlsSection, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .SettingsModal, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) button.DialogButton.Primary:disabled {
+	background-color: var(--button-background-disabled) !important;
+	color: var(--text-muted-color) !important;
+}
+
+/* Focus ring (gamepad and keyboard) */
+button.DialogButton.gpfocus,
+button.DialogButton:focus-visible {
+	outline: 2px solid var(--SystemAccentColor);
+	outline-offset: 1px;
+}
+
+/* Dialog Inputs */
+
+/* Text fields and generic input containers */
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) :is(.DialogTextInputBase, ._DialogInputContainer) {
+	background-color: var(--button-background) !important;
+	border: 1px solid transparent !important;
+	border-radius: var(--button-radius, 6px) !important;
+	color: var(--text-light-color) !important;
+	box-shadow: unset !important;
+	transition: background-color .15s linear, border-color .15s linear, box-shadow .15s linear;
+}
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) :is(.DialogTextInputBase, ._DialogInputContainer):hover {
+	background-color: var(--button-hover-background) !important;
+}
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) :is(.DialogTextInputBase, ._DialogInputContainer):is(:focus, :focus-within) {
+	border-color: var(--SystemAccentColor) !important;
+	box-shadow: 0 0 0 1px var(--SystemAccentColor-Border) !important;
+}
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) :is(.DialogTextInputBase, ._DialogInputContainer) input {
+	background: transparent !important;
+	color: var(--text-bright-color) !important;
+	caret-color: var(--SystemAccentColor);
+}
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .FullModalOverlay, .MillenniumDesktopSidebar, ._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._2twDTGz8aLvqOdz5v2gq5C, #nk-nevko-info, #nk-nevko-page) :is(.DialogTextInputBase, ._DialogInputContainer) input::placeholder {
+	color: var(--text-muted-color);
+}
+
+/* Dropdown fields */
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .MillenniumDesktopSidebar, #nk-nevko-info, #nk-nevko-page) :is(.DialogDropDown, ._DialogInputContainer .DialogDropDown) {
+	background-color: var(--button-background) !important;
+	border: 1px solid transparent !important;
+	border-radius: var(--button-radius, 6px) !important;
+	color: var(--text-light-color) !important;
+	transition: background-color .15s linear, border-color .15s linear;
+}
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .MillenniumDesktopSidebar, #nk-nevko-info, #nk-nevko-page) :is(.DialogDropDown, ._DialogInputContainer .DialogDropDown):hover {
+	background-color: var(--button-hover-background) !important;
+}
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .MillenniumDesktopSidebar, #nk-nevko-info, #nk-nevko-page) .DialogDropDown_CurrentDisplay {
+	color: var(--text-light-color) !important;
+}
+:is(.DialogContent, .SettingsModal, .ModalPosition, .ModalDialogPopup, .MillenniumDesktopSidebar, #nk-nevko-info, #nk-nevko-page) .DialogDropDown_Arrow svg {
+	fill: var(--icon-color) !important;
+}
+
+/* The list a dropdown opens (its own popup window) */
+.DialogMenuPopup .DialogMenu_Item,
+._DialogMenuPosition .DialogMenu_Item,
+._DialogMenuPosition .DialogMenu .DialogMenu_Item {
+	background: transparent !important;
+	border-radius: var(--button-radius, 6px);
+	color: var(--text-light-color) !important;
+	transition: background-color .15s linear, color .15s linear;
+}
+.DialogMenuPopup .DialogMenu_Item:hover,
+._DialogMenuPosition .DialogMenu_Item:hover {
+	background-color: var(--button-hover-background) !important;
+	color: var(--text-bright-color) !important;
+}
+.DialogMenuPopup .DialogMenu_Item.Active,
+._DialogMenuPosition .DialogMenu_Item:is(.Active, .selected) {
+	background-color: var(--SystemAccentColor-Transparent) !important;
+	color: var(--SystemAccentColor) !important;
+}
+
+/* Checkboxes and radios */
+.DialogCheckbox_Container :is(input[type="checkbox"], input[type="radio"]) {
+	accent-color: var(--SystemAccentColor);
+}
+
+/* Labels */
+.DialogLabel,
+.DialogInputLabel,
+.DialogInputLabelGroup .DialogInputLabel {
+	color: var(--text-soft-color) !important;
+}
+
+/* Toggle (on/off switch of the settings) */
+.DialogToggleField._DialogInputContainer {
+	background-color: transparent !important;
+	border: 0 !important;
+	padding: 0 !important;
+}
+.DialogToggleField_Control {
+	background-color: var(--button-background) !important;
+	border-radius: 999px !important;
+	transition: background-color .15s linear;
+}
+.DialogToggleField .DialogToggleField_Option {
+	border-radius: 999px;
+}
+.DialogToggleField:has(.DialogToggleField_Option.On.Active) .DialogToggleField_Control,
+.DialogToggleField_Option.Active {
+	background-color: var(--SystemAccentColor) !important;
+}
+.DialogToggleField_Option:not(.Active) {
+	background-color: color-mix(in srgb, #fff 35%, transparent) !important;
+}
+
+/* Sliders and progress bars inside dialog bodies */
+.DialogBody input[type="range"] {
+	accent-color: var(--SystemAccentColor);
+}
+.DialogBody .DialogProgressBar,
+.DialogBody ._DialogInputContainer .SliderTrack {
+	background-color: var(--button-background) !important;
+	border-radius: 999px;
+}
+.DialogBody .DialogProgressBarFill,
+.DialogBody .SliderControlPanel_ProgressFill,
+.DialogBody ._DialogInputContainer .SliderTrackFill {
+	background-color: var(--SystemAccentColor) !important;
+}
+
+/* Steam Settings */
+
+/* The window and its pages */
+.SettingsModal .DialogContent,
+.DialogContent.CFTLX2wIKOK3hNV-fS7_V {
+	background-color: var(--main-background) !important;
+	border-radius: var(--button-radius, 6px);
+}
+.SettingsModal .DialogBody,
+.DialogContent.CFTLX2wIKOK3hNV-fS7_V .DialogBody {
+	background-color: var(--main-background) !important;
+}
+
+/* The list of sections on the left */
+.SettingsModal .PagedSettingsDialog_PageList,
+._2kwFFHckg8jvnwJfg9-la8 {
+	background-color: var(--secondary-background) !important;
+	border-radius: var(--button-radius, 6px);
+}
+
+/* Section entries */
+.SettingsModal .PagedSettingsDialog_PageListItem,
+._2kwFFHckg8jvnwJfg9-la8 ._18QCu-7MTzd51UpVbYysDy ._1-vlriAtKYDViAEunue4VO {
+	border-radius: var(--button-radius, 6px);
+	color: var(--text-soft-color) !important;
+	transition: background-color .15s linear, color .15s linear;
+}
+.SettingsModal .PagedSettingsDialog_PageListItem:hover:not(.Active),
+._2kwFFHckg8jvnwJfg9-la8 ._18QCu-7MTzd51UpVbYysDy ._1-vlriAtKYDViAEunue4VO:hover:not(._2DpXjzK3WWsOtUWUrcuOG7) {
+	background-color: var(--button-hover-background) !important;
+	color: var(--text-bright-color) !important;
+}
+.SettingsModal .PagedSettingsDialog_PageListItem.Active,
+._2kwFFHckg8jvnwJfg9-la8 ._18QCu-7MTzd51UpVbYysDy ._1-vlriAtKYDViAEunue4VO._2DpXjzK3WWsOtUWUrcuOG7 {
+	background-color: var(--SystemAccentColor-Transparent) !important;
+	color: var(--text-bright-color) !important;
+}
+
+/* Dividers between groups of sections */
+.SettingsModal .PageListSeparator,
+._2kwFFHckg8jvnwJfg9-la8 ._18QCu-7MTzd51UpVbYysDy ._1Hye7o1wYIfc9TE9QKRW4T {
+	background-color: var(--button-background) !important;
+	border: 0 !important;
+	height: 2px;
+	border-radius: 2px;
+}
+
+/* Headers inside pages */
+.DESUBHEADER,
+._3V1muvITdJ0jK0ZAyuTMJo {
+	color: var(--text-bright-color) !important;
+}
+._2rjVTGz8aLvqOdz5v2gq5C {
+	color: var(--SystemAccentColor) !important;
+}
+
+/* Cards of themes / plugins in the Millennium settings */
+.SettingsModal :is(.MillenniumThemes_ThemeItem, .MillenniumPlugins_PluginField),
+._DialogInputContainer .MicrosoftContainer {
+	background-color: var(--secondary-background) !important;
+	border: 1px solid var(--button-background) !important;
+	border-radius: var(--button-radius, 6px) !important;
+	transition: background-color .15s linear, border-color .15s linear;
+}
+.SettingsModal :is(.MillenniumThemes_ThemeItem, .MillenniumPlugins_PluginField):hover {
+	background-color: color-mix(in srgb, var(--secondary-background) 92%, white) !important;
+	border-color: var(--SystemAccentColor) !important;
+}
+
+/* Popups & Notifications */
+
+/* Achievement unlock */
+.AchievementUnlockNotify,
+._3HrttPjEAC_iveNtify._1ACHROpM {
+	background-color: var(--main-background) !important;
+	border: 1px solid var(--button-background);
+	border-radius: var(--button-radius, 6px);
+	color: var(--text-soft-color);
+}
+.AchievementUnlockNotify :is(._2G6CGiOdFsKjFrXgPqN9ft, .AchievementName) {
+	color: var(--SystemAccentColor-Light) !important;
+	font-weight: 600;
+}
+
+/* Special offers */
+.SpecialOfferNotify,
+._5pPecialOfferNotify {
+	background-color: var(--main-background) !important;
+	border: 1px solid var(--SystemAccentColor) !important;
+	border-radius: var(--button-radius, 6px);
+}
+.SpecialOfferNotify :is(.offerBtn, button) {
+	background-color: var(--SystemAccentColor) !important;
+	color: var(--text-bright-color) !important;
+}
+
+/* Legacy popup_block (hover popups of the pages) */
+.popup_block .popup_body,
+.DesktopUI .popup_block .popup_body {
+	background-color: var(--main-background) !important;
+	border: 1px solid var(--button-background);
+	border-radius: var(--button-radius, 6px);
+	color: var(--text-soft-color) !important;
+}
+/* Its shadow panels are replaced by the single border */
+.popup_block > :is(.shadow_ul, .shadow_top, .shadow_ur, .shadow_left, .shadow_right, .shadow_bl, .shadow_bottom, .shadow_br) {
+	display: none !important;
+}
+
+/* Millennium extension manager */
+.extension-manager-popup,
+.extension-manager-popup :is(.extension-main, .extension-detail-info) {
+	background-color: var(--main-background) !important;
+	border-radius: var(--button-radius, 6px);
+	color: var(--text-soft-color) !important;
+}
+.extension-manager-popup .extension-card {
+	background-color: var(--secondary-background) !important;
+	border: 1px solid var(--button-background);
+	border-radius: var(--button-radius, 6px);
+}
+.extension-manager-popup .extension-card:hover {
+	border-color: var(--SystemAccentColor) !important;
+}
+.extension-manager-popup .extension-buttons button {
+	background-color: var(--SystemAccentColor) !important;
+	color: var(--text-bright-color) !important;
+	border-radius: var(--button-radius, 6px);
+}
+
+/* Toasts, EULA / legal and modal windows by their own classes */
+:is(._2sssIwe0duyIrFvat2oXzH, ._3few7361SOf4k_YuKCmM62, ._3aEN8iFvicW_addR, ._2twDTGz8aLvqOdz5v2gq5C, .TradeOfferDialog) {
+	background-color: var(--main-background) !important;
+	color: var(--text-soft-color);
+}

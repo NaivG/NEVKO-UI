@@ -123,6 +123,7 @@
 <summary><b>Main & Experimental</b></summary>
 
 - **Context Menu** - Refresh (redesigned) or Legacy
+- **Dialogs** - Refresh (redesigned dialogs, Steam settings, popups) or Legacy
 - **Rounding Buttons** and **Button Press Animation**
 - **Device Shown to Friends** *(experimental)* - show the Big Picture or Mobile mark next to your status
 
